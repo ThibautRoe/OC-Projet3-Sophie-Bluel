@@ -1,0 +1,666 @@
+:root {
+	--main-bold-color: #1D6154;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** end reset css**/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	font-family: 'Work Sans';
+	font-size: 14px;
+}
+
+.main-container {
+	max-width: 1140px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+
+section {
+	margin: 50px 0
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1>span {
+	font-family: 'Work Sans';
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	;
+}
+
+h2 {
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--main-bold-color)
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+li a:hover,
+li:hover {
+	color: #B1663C;
+}
+
+.introduction {
+	display: flex;
+	gap: 71px;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+}
+
+.introduction figure {
+	flex: 1
+}
+
+.introduction img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.introduction article {
+	flex: 1
+}
+
+.introduction h2 {
+	margin-bottom: 1em;
+}
+
+.introduction p {
+	margin-bottom: 0.5em;
+}
+
+.gallery {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+	height: 407px;
+	object-fit: cover;
+}
+
+#contact,
+#login {
+	width: 50%;
+	margin: auto;
+}
+
+#login {
+	margin: 200px auto;
+}
+
+#contact>*,
+#login>* {
+	text-align: center;
+
+}
+
+#contact h2,
+#login h2 {
+	margin-bottom: 20px;
+}
+
+#contact form,
+#login form,
+.addPhotoFormDetails {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input,
+#contact textarea,
+#login input,
+.addPhotoFormDetails input {
+	font-family: 'Work Sans';
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	padding: 14px 16px;
+}
+
+#contact label,
+#login label,
+.addPhotoFormDetails label {
+	margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: var(--main-bold-color);
+	margin: 2em auto;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px;
+	cursor: pointer;
+}
+
+.errorMessage {
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	color: #D65353;
+	margin-top: 15px;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+.filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.filter-button {
+	padding: 11px 13px;
+	min-width: 100px;
+	border: 1px solid var(--main-bold-color);
+	border-radius: 25px;
+	font-family: 'Syne';
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--main-bold-color);
+	text-align: center;
+	cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.active {
+	background-color: var(--main-bold-color);
+	color: white;
+}
+
+.topEditBar {
+	display: flex;
+	gap: 21px;
+	justify-content: center;
+	align-items: center;
+	height: 59px;
+	background-color: black;
+}
+
+.editMode {
+	display: flex;
+	gap: 12px;
+	line-height: 16px;
+	color: white;
+	cursor: pointer;
+}
+
+.publishButton {
+	line-height: 16px;
+	background-color: white;
+	padding: 11px 23px;
+	border-radius: 60px;
+	cursor: pointer;
+}
+
+.mes-projets {
+	display: flex;
+	gap: 31px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.editIconAndTextIntro {
+	display: flex;
+	gap: 10px;
+	width: 90%;
+	margin: auto;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.editIconAndTextPortfolio {
+	display: flex;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.modalWindow {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+	width: 630px;
+	padding: 25px 0 50px 0;
+}
+
+.mainContentModal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0 105px;
+}
+
+.mainContentModal h1 {
+	font-size: 26px;
+	font-family: 'Work Sans';
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+	margin-top: 21px;
+}
+
+.galleryModalWrapper {
+	width: 100%;
+	min-height: 436px;
+	max-height: 436px;
+	padding-bottom: 46px;
+	margin: 46px 0 38px 0;
+	border-bottom: 1px solid #B3B3B3;
+	overflow: auto;
+}
+
+.galleryModalItems {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 15px 10px;
+}
+
+.figureWrapper {
+	position: relative;
+	height: 104px;
+}
+
+.figureWrapper img {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+
+.cardButtons {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	display: flex;
+	gap: 3px;
+}
+
+.moveButton,
+.deleteButton {
+	background-color: black;
+	border-radius: 2px;
+	height: 17px;
+	width: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.inactive {
+	display: none;
+}
+
+.editFigure {
+	font-family: 'Work Sans';
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+	cursor: pointer;
+}
+
+.mainContentModal button {
+	font-family: 'Syne';
+	font-size: 14px;
+	font-weight: 700;
+	color: white;
+	background-color: var(--main-bold-color);
+	width: 237px;
+	height: 36px;
+	border-radius: 60px;
+	cursor: pointer;
+	border: none;
+}
+
+.addPhotoButton {
+	margin-bottom: 23px;
+}
+
+.deleteGalleryModal {
+	font-family: 'Syne';
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	color: #D65353;
+	cursor: pointer;
+}
+
+.topButtonsModalWindow {
+	display: flex;
+	width: 100%;
+	padding: 0 25px;
+}
+
+.previousButton {
+	cursor: pointer;
+}
+
+.closeButton {
+	cursor: pointer;
+	margin-left: auto;
+}
+
+#addPhotoForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 36px;
+}
+
+.addPictureBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #E8F1F6;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+.addPictureBoxWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 169px;
+}
+
+.addPictureBoxWrapper img {
+	width: 58px;
+	margin-top: 22px;
+	margin-bottom: 18px;
+}
+
+.addPictureBoxWrapper img.imageToDisplay {
+	height: inherit;
+	width: unset;
+	margin: 0;
+}
+
+.addPictureBoxWrapper label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 173px;
+	height: 36px;
+	color: #306685;
+	background-color: #CBD6DC;
+	border-radius: 50px;
+	margin-bottom: 7px;
+}
+
+.addPictureBoxWrapper p {
+	font-size: 10px;
+	color: #444444;
+}
+
+input[id="imageInput"] {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.addPhotoFormDetails {
+	margin-top: 0;
+	padding-bottom: 47px;
+	border-bottom: 1px solid #B3B3B3;
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+.dropdownMenu {
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	padding: 0 12px;
+}
+
+.dropdownMenu select {
+	width: 100%;
+	font-family: 'Work Sans';
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	padding: 14px 0;
+}
+
+.confirmAddPhotoButton {
+	margin-bottom: 5px;
+}
+
+.errorMessageDeleteProject {
+	font-family: 'Syne';
+	font-size: 13px;
+	font-weight: 400;
+	font-style: normal;
+	color: #D65353;
+	margin-bottom: 10px;
+}
+
+.errorMessageAddProject {
+	font-family: 'Syne';
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	color: #D65353;
+	margin-top: 5px;
+}
+
+#login p u {
+	cursor: pointer;
+}
