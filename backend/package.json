@@ -4,6 +4,10 @@
     "private": true,
     "description": "",
     "main": "server.js",
+    "engines": {
+        "node": "^20.9.0",
+        "npm": "^10.1.0"
+    },
     "scripts": {
         "start": "node server.js",
         "dev": "node --watch server.js",
@@ -23,8 +27,5 @@
         "sequelize": "^6.19.0",
         "sqlite3": "^5.0.5",
         "swagger-ui-express": "^4.3.0"
-    },
-    "devDependencies": {
-        "sequelize-cli": "^6.6.2"
     }
 }
