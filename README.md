@@ -1,8 +1,8 @@
-# Sophie Bluel - Architecte d'intérieur
+# Sophie Bluel - Interior designer
 
 Project #3 of OpenClassrooms certification / Fullstack Web Developer
 
-Develop the admin back-office for a professional photographer's portfolio
+Develop the admin back-office for an interior designer portfolio
 
 ## Preview
 
