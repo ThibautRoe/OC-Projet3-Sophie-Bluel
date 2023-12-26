@@ -6,9 +6,7 @@ Develop the admin back-office for a professional photographer's portfolio
 
 ## Preview
 
--   Hosted back-end (DB is restored to initial state on a regular basis for security reasons): https://oc-3-sophie-bluel-back-end.vercel.app
--   OpenAPI / Swagger documentation: https://oc-3-sophie-bluel-back-end.vercel.app/api-docs/
--   Hosted front-end: https://oc-3-sophie-bluel.vercel.app/
+No preview, unable to get the back-end to work on Vercel because of the local SQlite DB used
 
 ## Technologies (front-end)
 
@@ -43,9 +41,11 @@ _Tested with Node.js 20.9.0 and NPM 10.1.0_
 
 ## Front-end
 
-Nothing fancy, just open "index.html" from "frontend-local' folder
+### 🧑🏻‍💻 Usage
 
-Admin test account for front-end:
+Nothing fancy: open the project with VS Code, start a Live Server and open "index.html" from "frontend" folder
+
+### 🪪 Admin test account for front-end
 
 ```bash
 email: sophie.bluel@test.tld

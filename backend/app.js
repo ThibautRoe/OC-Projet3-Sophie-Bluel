@@ -8,26 +8,8 @@ const swaggerUi = require("swagger-ui-express")
 
 const dirPath = __dirname
 
-let swaggerPath
-let swaggerDocument
-let swaggerCustom
-
-if (process.env.ENV !== "vercel") {
-    swaggerPath = path.join(dirPath, "./swagger.json")
-    swaggerDocument = JSON.parse(readFileSync(swaggerPath))
-} else {
-    // Obligé de faire comme ça pour Vercel sinon ça ne fonctionne pas
-    swaggerCustom = {
-        customCssUrl: "https://unpkg.com/swagger-ui-dist@4.3.0/swagger-ui.css",
-        customJs: [
-            "https://unpkg.com/swagger-ui-dist@4.3.0/swagger-ui-bundle.js",
-            "https://unpkg.com/swagger-ui-dist@4.3.0/swagger-ui-standalone-preset.js",
-        ],
-        swaggerOptions: {
-            url: "https://oc-3-sophie-bluel-back-end.vercel.app/swagger.json",
-        },
-    }
-}
+const swaggerPath = path.join(dirPath, "./swagger.json")
+const swaggerDocument = JSON.parse(readFileSync(swaggerPath))
 
 const app = express()
 app.use(cors())
@@ -48,11 +30,6 @@ db.sequelize.sync().then(() => console.log("db is ready"))
 app.use("/api/users", userRoutes)
 app.use("/api/categories", categoriesRoutes)
 app.use("/api/works", worksRoutes)
-
-if (process.env.ENV !== "vercel") {
-    app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
-} else {
-    app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(null, swaggerCustom))
-}
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 module.exports = app
