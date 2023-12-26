@@ -6,7 +6,8 @@ Develop the admin back-office for a professional photographer's portfolio
 
 ## Preview
 
-No preview, unable to get the back-end to work on Vercel because of the local SQlite DB used
+-   No preview, unable to get the back-end to work on Vercel because of the local SQlite DB used
+-   Based on this Figma design: https://www.figma.com/file/LmtvXfEv2zP0HTK9dbpfoT/OC-P3---Sophie-Bluel?type=design&mode=design&t=RxVv8W9HimR5F41r-1
 
 ## Technologies (front-end)
 
