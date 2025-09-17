@@ -6,14 +6,14 @@ Develop the admin back-office for a professional photographer's portfolio
 
 ## Preview
 
--   No preview, unable to get the back-end to work on Vercel because of the local SQlite DB used
--   Based on this Figma design: https://www.figma.com/file/LmtvXfEv2zP0HTK9dbpfoT/OC-P3---Sophie-Bluel?type=design&mode=design&t=RxVv8W9HimR5F41r-1
+- No preview, unable to get the back-end to work on Vercel because of the local SQlite DB used
+- Based on this Figma design: https://www.figma.com/file/LmtvXfEv2zP0HTK9dbpfoT/OC-P3---Sophie-Bluel?type=design&mode=design&t=RxVv8W9HimR5F41r-1
 
 ## Technologies (front-end)
 
--   HTML
--   CSS
--   JS
+- HTML
+- CSS
+- JS
 
 ## Back-end
 
@@ -38,7 +38,7 @@ npm run debug     # To start with debugger
 # default server: http://localhost:5678
 ```
 
-_Tested with Node.js 20.9.0 and NPM 10.1.0_
+_Tested with Node.js 22.19.0 and NPM 10.9.3_
 
 ## Front-end
 
